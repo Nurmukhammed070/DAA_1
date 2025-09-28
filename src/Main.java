@@ -11,7 +11,6 @@ public class Main {
         for (int x : arr1) System.out.print(x + " ");
         System.out.println();
 
-        // MergeSort
         int[] arr2 = arr1.clone();
         Metrics m1 = new Metrics();
         MergeSort.sort(arr2, m1);
@@ -20,7 +19,6 @@ public class Main {
         System.out.println();
         m1.print();
 
-        // QuickSort
         int[] arr3 = arr1.clone();
         Metrics m2 = new Metrics();
         QuickSort.sort(arr3, m2);
@@ -29,12 +27,10 @@ public class Main {
         System.out.println();
         m2.print();
 
-        // DeterministicSelect
         int k = 5;
         int kth = DeterministicSelect.select(arr1.clone(), k);
         System.out.println(k + "-th smallest element: " + kth);
 
-        // Closest Pair
         ClosestPair.Point[] pts = {
                 new ClosestPair.Point(0, 0),
                 new ClosestPair.Point(2, 3),
